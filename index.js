@@ -7,12 +7,12 @@ const bot = new TelegramBot(TOKEN, {polling: true})
 bot.on('message', msg => {
   bot.sendMessage(msg.chat.id, `${msg.from.username} Вас вітає фотограф БлаБлаБла`)
   .then(() =>
-  bot.SendMessage(chat_id, "Ви хочете отримати реєстрацію?")
+  bot.SendMessage(msg.chat.id, "Ви хочете отримати реєстрацію?")
   .then(() => {
-    return bot.SendMessage(chat_id, "ІМя")
+    return bot.SendMessage(msg.chat.id, "ІМя")
   })
   .then(() => {
-    return bot.SendMessage(chat_id, "Дата")
+    return bot.SendMessage(msg.chat.id, "Дата")
   });
 })
 
