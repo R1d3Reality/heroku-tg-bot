@@ -6,8 +6,8 @@ const bot = new TelegramBot(TOKEN, {polling: true})
 
 bot.on('message', msg => {
   bot.sendMessage(msg.chat.id, `${msg.from.username} Вас вітає фотограф БлаБлаБла`)
-  .then(()
+  .then(() => {
   return bot.SendMessage(msg.chat.id, `${msg.from.username} хочете зареєструватись на фотосесію?`)
-    )
+    )}
 })
 
