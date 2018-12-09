@@ -1,7 +1,7 @@
 {
-  "name": "fix-my-stuff",
+  "name": "register-me",
   "version": "1.0.0",
-  "description": "Simple chatbot for requesting repair of some stuff",
+  "description": "Simple chatbot",
   "main": "src/index.js",
   "scripts": {
     "start": "NODE_ENV=development TELEGRAM_TOKEN=763838619:AAE0h1CsibGj51v53YtCqx6dLSiCg4DXvlM nodemon src/index.js --exec babel-node"
@@ -21,6 +21,6 @@
     "babel-register": "^6.9.0",
     "nodemon": "^1.9.2"
   },
-  "author": "Oleksandr Tarasenko",
+  "author": "Stefiuk Pavlo",
   "license": "ISC"
 }
